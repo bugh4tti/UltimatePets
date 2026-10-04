@@ -1,0 +1,22 @@
+name: UltimatePets
+version: 1.0.0
+main: com.ultimatepets.UltimatePets
+api-version: '1.18'
+commands:
+  pets:
+    description: Menú de mascotas
+    aliases: [dp, dpets, pet]
+    usage: /<command>
+permissions:
+  ultimatepets.use:
+    default: true
+  ultimatepets.admin:
+    default: op
+  ultimatepets.slots.2:
+    default: false
+  ultimatepets.slots.3:
+    default: false
+  ultimatepets.slots.4:
+    default: false
+  ultimatepets.slots.5:
+    default: false
