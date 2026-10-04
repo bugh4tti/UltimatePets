@@ -1,0 +1,88 @@
+settings:
+  max-stored: 50
+  default-slots: 1
+  follow-interval-ticks: 2
+  name-format: "{name} &7({level})"
+
+menu:
+  title: "&8Menú de Mascotas"
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  slot-unlocked:
+    material: LIME_STAINED_GLASS_PANE
+    name: "&aEspacio Desbloqueado"
+    lore:
+      - ""
+      - "&7Tienes este slot disponible"
+      - "&7para añadir una de tus mascotas."
+      - ""
+      - "&e¡Click en una mascota para equiparla!"
+  slot-locked:
+    material: RED_STAINED_GLASS_PANE
+    name: "&cEspacio Bloqueado"
+    lore:
+      - ""
+      - "&7No tienes acceso a este slot."
+  delete-button:
+    material: TNT
+    name: "&cEliminar Mascota"
+    lore:
+      - ""
+      - "&7Activa el modo de eliminación"
+      - "&7para eliminar alguna mascota."
+      - ""
+      - "&e¡Click para eliminar mascotas!"
+  delete-button-active:
+    material: REDSTONE_BLOCK
+    name: "&4Modo Eliminación &c(ACTIVO)"
+    lore:
+      - ""
+      - "&7Click en una mascota para eliminarla."
+      - ""
+      - "&e¡Click para salir del modo!"
+  info-button:
+    material: CLOCK
+    name: "&eInformación"
+    lore:
+      - ""
+      - "&aInformación:"
+      - " &7▪ &fEquipadas: &a{equipped}&7/&a{slots}"
+      - " &7▪ &fAlmacenadas: &d{stored}&7/&d{max}"
+  prev-button:
+    material: ARROW
+    name: "&ePágina anterior"
+  next-button:
+    material: ARROW
+    name: "&ePágina siguiente"
+
+pet-lore:
+  - ""
+  - "&7Rareza: {rarity}"
+  - "&7Nivel: &f{level}&7/&f{max}"
+  - "&7Boost: &a{boost}"
+  - ""
+  - "{status}"
+
+status-active: "&c¡Click para desactivar!"
+status-inactive: "&a¡Click para activar!"
+status-equipped: "&c¡Click para desactivar!"
+status-delete: "&4¡Click para eliminar!"
+
+messages:
+  prefix: "&c&lPETS &8» &f"
+  activated: "Activaste tu {pet}"
+  deactivated: "Desactivaste tu {pet}"
+  deleted: "Eliminaste tu {pet}"
+  no-slots: "&cNo tienes slots libres para equipar otra mascota."
+  slot-locked: "&cNo tienes acceso a este slot."
+  storage-full: "&cEl almacén de mascotas está lleno."
+  given: "&aLe diste {pet} &a(nivel {level}) a &f{player}"
+  received: "Recibiste {pet}"
+  no-permission: "&cNo tienes permiso."
+  unknown-pet: "&cEsa mascota no existe. Disponibles: &f{list}"
+  player-offline: "&cJugador no encontrado."
+  reload: "&aConfiguración recargada."
+  list: "&7Mascotas: &f{list}"
+  usage: "&cUso: /pets [give <jugador> <mascota> [nivel] | list | reload]"
+  usage-give: "&cUso: /pets give <jugador> <mascota> [nivel]"
