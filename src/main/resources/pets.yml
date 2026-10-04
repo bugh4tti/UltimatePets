@@ -1,0 +1,53 @@
+# texture: valor base64 de minecraft-heads.com (opcional).
+# Si texture está vacío se usa "material" como cabeza.
+# boost.type: EXP (lo aplica el plugin). Los demás tipos (ESENCIAS, TOKENS, PERLAS...)
+# se leen desde otros plugins con la API getMultiplier(player, "TIPO").
+# Multiplicador = base + per-level * (nivel - 1)
+pets:
+  exp:
+    name: "&bPet de Experiencia"
+    rarity: "&6Épica"
+    material: EXPERIENCE_BOTTLE
+    texture: ""
+    max-level: 100
+    boost:
+      type: EXP
+      label: "EXP"
+      base: 2.0
+      per-level: 0.0
+
+  esencias:
+    name: "&aPet de Esencias"
+    rarity: "&aComún"
+    material: EMERALD_BLOCK
+    texture: ""
+    max-level: 100
+    boost:
+      type: ESENCIAS
+      label: "Esencias"
+      base: 1.5
+      per-level: 0.01
+
+  tokens:
+    name: "&cPet de Tokens"
+    rarity: "&9Rara"
+    material: REDSTONE_BLOCK
+    texture: ""
+    max-level: 100
+    boost:
+      type: TOKENS
+      label: "Tokens"
+      base: 1.5
+      per-level: 0.01
+
+  perlas:
+    name: "&3Pet de Perlas"
+    rarity: "&5Legendaria"
+    material: DIAMOND_BLOCK
+    texture: ""
+    max-level: 100
+    boost:
+      type: PERLAS
+      label: "Perlas"
+      base: 1.5
+      per-level: 0.01
